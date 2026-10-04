@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrittii Architects | About</title>
+    <meta name="description" content="Meet Vrittii Architects a Pune interior design, architecture & real estate studio. Our story, team and design philosophy behind spaces you'll love.">
+    <link rel="canonical" href="https://www.vrittiiarchitects.in/">
+    <meta name="theme-color" content="#5d5346">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vrittii Architects">
+    <meta property="og:title" content="Vrittii Architects | About">
+    <meta property="og:description" content="Meet Vrittii Architects a Pune interior design, architecture & real estate studio. Our story, team and design philosophy behind spaces you'll love.">
+    <meta property="og:url" content="https://www.vrittiiarchitects.in/">
+    <meta property="og:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vrittii Architects | About">
+    <meta name="twitter:description" content="Meet Vrittii Architects a Pune interior design, architecture & real estate studio. Our story, team and design philosophy behind spaces you'll love.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-secondary: "Manrope", sans-serif;
+        /* --font-primary: "Hedvig Letters Serif", serif; */
+        --font-primary: "Hedvig Letters Serif", serif;
+        --text-csm: 16px;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    </style>
+
+    <!-- Component-specific styles (shared with home page) -->
+    <style>
+      /* Section container max-width 1440px, 25px gutters (used site-wide) */
+      .container-x {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+      }
+      /* Row container for two-column row sections */
+      .container-row {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        flex: none;
+        gap: 100px;
+        place-content: center;
+        align-items: center;
+        overflow: clip;
+        height: min-content;
+      }
+
+      /* Floating action buttons */
+      .fab-stack {
+        position: fixed;
+        right: 18px;
+        bottom: 22px;
+        z-index: 60;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+      .fab-btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 22px;
+        box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .fab-btn:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 12px 26px rgba(0,0,0,0.32);
+      }
+      .fab-whatsapp { background: #25D366; }
+      .fab-call { background: #5d5346; }
+
+      @keyframes fabPulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+        70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      .fab-whatsapp { animation: fabPulse 2.6s infinite; }
+    </style>
+  </head>
+
+  <body>
+    <div class="root relative">
+
+      <!-- ============================= -->
+      <!-- Full Screen Mobile/Overlay Menu (shared) -->
+      <!-- ============================= -->
+      <div id="sideMenu" class="fixed top-0 left-0 h-[100svh] w-full sm:w-[420px] z-[100] backdrop-blur-[10px] bg-[rgba(16,16,20,0.6)] flex flex-col justify-between p-6 sm:p-10 -translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="menu-top flex justify-between items-center">
+          <span class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide text-white">Vrittii Architects</span>
+          <button id="closeMenuBtn" class="text-white p-2.5 border border-white/25 rounded-full shrink-0">
+            <i class="ri-close-line text-[18px] leading-none block"></i>
+          </button>
+        </div>
+
+        <ul class="menu-middle space-y-4 sm:space-y-6 text-white text-[20px] leading-[20px]">
+          <li><a href="portfolio.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Portfolio</a></li>
+          <li><a href="gallery.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Gallery</a></li>
+          <li><a href="services.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Services</a></li>
+          <li><a href="about.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">About Us</a></li>
+          <li><a href="contact.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Enquiries</a></li>
+        </ul>
+
+        <div class="pt-6 space-y-3 border-t border-t-white/15">
+          <ul class="text-[13px] sm:text-[14px] flex gap-4 font-medium tracking-[0.5px] uppercase text-white/70">
+            <li class="hover:text-white transition-colors cursor-pointer">Instagram</li>
+            <li class="hover:text-white transition-colors cursor-pointer">X</li>
+            <li class="hover:text-white transition-colors cursor-pointer">Linkedin</li>
+          </ul>
+          <p class="text-[14px] sm:text-[15px] font-normal leading-[20px] text-white/80">vrittiiarchitects@gmail.com</p>
+        </div>
+      </div>
+
+      <div id="menuOverlay" class="fixed inset-0 bg-black/40 z-[90] hidden"></div>
+
+     
+      <!-- Navbar (fixed) same as home page -->
+      <nav id="mainNav" class="fixed top-0 left-0 w-full z-[50] text-white transition-colors duration-300">
+        <div class="px-4 sm:px-6 lg:px-10 py-5 sm:py-6 flex items-center justify-between border-b border-white/25">
+          <a href="index.html#home" class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide">Vrittii Architects</a>
+
+          <ul class="hidden md:flex items-center gap-8 lg:gap-12 font-secondary text-[14px] leading-[18px] font-medium">
+            <li><a href="portfolio.html" class="menu-link hover:opacity-60 transition-opacity">Portfolio</a></li>
+            <li><a href="gallery.html" class="menu-link hover:opacity-60 transition-opacity">Gallery</a></li>
+            <li><a href="services.html" class="menu-link hover:opacity-60 transition-opacity">Services</a></li>
+            <li><a href="about.html" class="menu-link hover:opacity-60 transition-opacity">About Us</a></li>
+            <li><a href="contact.html" class="menu-link hover:opacity-60 transition-opacity">Enquiries</a></li>
+          </ul>
+
+          <!-- Mobile hamburger -->
+          <div id="openMenuBtn" class="md:hidden cursor-pointer flex flex-col gap-[6px] items-end shrink-0">
+            <span class="block w-7 h-[1.5px] bg-white"></span>
+            <span class="block w-7 h-[1.5px] bg-white"></span>
+            <span class="block w-7 h-[1.5px] bg-white"></span>
+          </div>
+        </div>
+      </nav>
+
+     
+      <main class="main-content">
+
+        <!-- ============================================================= -->
+        <!-- 1) ABOUT HERO -->
+        <!-- ============================================================= -->
+        <section id="about-hero" class="relative h-[100svh] min-h-[620px] overflow-hidden">
+          <img class="absolute inset-0 w-full h-full object-cover" src="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&height=1200" alt="Vrittii Architects interior">
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <!-- centered eyebrow + heading -->
+          <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+            <div class="container-x">
+              <div class="max-w-[900px] mx-auto space-y-5 sm:space-y-7">
+                <p class="font-secondary text-[14px] leading-[20px] tracking-[2px] text-white/80">About Vrittii Architects</p>
+                <h1 class="font-primary font-normal text-[36px] leading-[42px] sm:text-[56px] sm:leading-[62px] lg:text-[72px] lg:leading-[80px]">A studio for calm, considered living.</h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottom paragraph -->
+          <div class="absolute bottom-10 sm:bottom-14 left-0 w-full z-10 px-4">
+            <div class="container-x flex justify-center">
+              <p class="font-secondary text-[14px] leading-[20px] text-white/90 text-center max-w-[520px]">
+                I believe great design isn't just seen — it's felt. We're VRITTII ARCHITECTS, designing spaces you'll love across Pune.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================= -->
+        <!-- 2) WHERE DESIGN MEETS EVERYDAY LIVING -->
+        <!-- ============================================================= -->
+        <section id="where-design" class="bg-[#f4f0e8] py-16 sm:py-24 md:py-[100px] lg:py-[125px]">
+          <div class="container-x">
+            <div class="max-w-[760px] mx-auto text-center space-y-6">
+              <h2 class="font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[1.15] text-black">Where design meets <br class="hidden sm:block"> everyday living.</h2>
+              <p class="font-secondary text-[14px] leading-[20px] text-black/70 max-w-[640px] mx-auto">
+                Our studio is driven by a belief that great design begins with understanding how a space is truly lived in. We take the time to listen, observe, and translate our clients' needs into interiors that feel both intentional and intuitive. Through careful space planning, material selection, and attention to detail, we create environments that balance beauty with functionality. Each project is approached as a collaboration, resulting in spaces that are not only visually refined, but deeply comfortable, personal, and designed to stand the test of time.
+              </p>
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================= -->
+        <!-- 3) MEET THE TEAM -->
+        <!-- ============================================================= -->
+        <section id="team" class="bg-[#f4f0e8] pb-16 sm:pb-24 md:pb-[100px] lg:pb-[125px]">
+          <div class="container-x space-y-12 sm:space-y-16">
+            <h2 class="font-primary font-normal text-center text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[1.15] text-black">Meet the Team</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-8">
+              <div class="space-y-4">
+                <div class="w-full max-w-[325px] mx-auto aspect-[4/5] overflow-hidden bg-black/5">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/nNK7Gw1ycxUucx9Oz8LOVmTdafU.png?scale-down-to=1024&width=900&height=1200" alt="Ar. Siddhant Purandare">
+                </div>
+                <div class="text-center space-y-[10px]">
+                  <p class="font-primary text-[22px] leading-[26px] text-black">Ravi Sonwane</p>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/55">Managing Partner</p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="w-full max-w-[325px] mx-auto aspect-[4/5] overflow-hidden bg-black/5">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/aGaGiFVVmmuPDWPQax5Nqsa6sxU.png?scale-down-to=1024&width=800&height=1200" alt="Team member">
+                </div>
+                <div class="text-center space-y-[10px]">
+                  <p class="font-primary text-[22px] leading-[26px] text-black">Ar. Ananya Deshpande</p>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/55">Senior Interior Designer</p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="w-full max-w-[325px] mx-auto aspect-[4/5] overflow-hidden bg-black/5">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/sU24OqYUdpw1XvluTke1268bw.png?scale-down-to=1024&width=904&height=1200" alt="Team member">
+                </div>
+                <div class="text-center space-y-[10px]">
+                  <p class="font-primary text-[22px] leading-[26px] text-black">Er. Rohan Kulkarni</p>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/55">Civil Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================= -->
+        <!-- 4) OUR PHILOSOPHY -->
+        <!-- ============================================================= -->
+        <section id="philosophy" class="bg-[#ece7de] py-16 sm:py-24 md:py-[100px] lg:py-[125px] overflow-hidden">
+          <div class="container-x">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-[100px] items-center">
+
+              <!-- left: heading + text (fixed max width) -->
+              <div class="space-y-6 w-full lg:max-w-[430px] lg:shrink-0">
+                <h2 class="font-primary font-normal text-[36px] sm:text-[48px] lg:text-[56px] leading-[1.05] text-black">Our <br> Philosophy</h2>
+                <p class="font-secondary text-[14px] leading-[20px] text-black/70">
+                  We believe great interior design goes beyond aesthetics. Every space should feel intentional, functional, and emotionally grounded. Our work is guided by balance, proportion, and a deep respect for how people actually live within the spaces we create.
+                </p>
+              </div>
+
+              <!-- right: two blocks (takes remaining width) -->
+              <div class="w-full lg:flex-1 grid grid-cols-2 gap-4 sm:gap-6 items-start">
+
+                <!-- Block 1: stacked (small width on top, full width below) -->
+                <div class="flex flex-col gap-4 sm:gap-6">
+                  <div class="w-3/4 ml-auto aspect-[4/3] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/O64BvWg7qKxhwTsoaMwOogOpIws.png?scale-down-to=512&width=1200&height=1200" alt="Interior detail">
+                  </div>
+                  <div class="w-full aspect-[5/4] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/T6geNXuDqq1KVexrgVr7YFywx4.png?scale-down-to=1024&width=1200&height=802" alt="Interior room">
+                  </div>
+                </div>
+
+                <!-- Block 2: single image, pushed down so it feels offset -->
+                <div class="pt-14 sm:pt-24">
+                  <div class="w-full aspect-[3/4] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/VC4qwfmfo0MFJmeX4tEZEVbnjn8.png?width=1200&height=800" alt="Interior styling">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <!-- ▲▲▲  END OF YOUR CONTENT AREA  ▲▲▲ -->
+
+      <!-- ============================= -->
+      <!-- Footer (shared) -->
+      <!-- ============================= -->
+      <!-- ============ CTA BAND ============ -->
+      <section class="relative h-[60svh] min-h-[380px] overflow-hidden">
+        <img class="absolute inset-0 w-full h-full object-cover" src="https://framerusercontent.com/images/aDtGubgGAeXhajjsmNZuK79LE.png?width=1200&height=686" alt="Vrittii Architects interior">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+          <div class="max-w-[640px] mx-auto space-y-5">
+            <h2 class="font-primary font-normal text-[30px] sm:text-[42px] lg:text-[48px] leading-[1.1]">Have a project in mind?</h2>
+            <p class="font-secondary text-[14px] leading-[20px] text-white/85 max-w-[480px] mx-auto">Tell us about your space and we'll put together a plan and a tentative estimate.</p>
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+              <a href="contact.html" class="bg-white text-[#2b2724] font-secondary font-semibold text-[14px] px-7 py-3.5 rounded-xl hover:bg-white/90 transition-colors">Get in Touch</a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="w-full bg-[#5d5346] text-white">
+        <div class="w-full px-4 sm:px-6 lg:px-10 pt-16 sm:pt-20 lg:pt-24 pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-10 lg:gap-8 pb-12 sm:pb-14">
+
+            <!-- Brand + subscribe -->
+            <div class="max-w-[380px]">
+              <a href="index.html#home" class="font-secondary text-[20px] leading-[26px] font-medium tracking-wide">Vrittii Architects</a>
+              <p class="font-secondary text-[14px] leading-[1.9] text-white/70 mt-6 max-w-[340px]">A Pune interior design, architecture & real estate studio. From concept to creation, we build spaces that inspire.</p>
+            </div>
+
+            <!-- INDEX -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Index</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="index.html#home" class="hover:text-white transition-colors">Home</a></li>
+                <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+              </ul>
+            </div>
+
+            <!-- DISCIPLINES -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Disciplines</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="services.html" class="hover:text-white transition-colors">Interior Design</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Civil Construction</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Renovation</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Turnkey Projects</a></li>
+              </ul>
+            </div>
+
+            <!-- NETWORK -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Network</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="https://www.instagram.com/vrittii_architects/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a></li>
+                <li><a href="https://wa.me/919730535531" target="_blank" rel="noopener" class="hover:text-white transition-colors">WhatsApp</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a></li>
+              </ul>
+            </div>
+
+            <!-- CONNECT -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Connect</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="contact.html" class="hover:text-white transition-colors">Enquiries</a></li>
+                <li><a href="mailto:vrittiiarchitects@gmail.com" class="hover:text-white transition-colors break-words">vrittiiarchitects@gmail.com</a></li>
+                <li><a href="tel:+919730535531" class="hover:text-white transition-colors">+91 97305 35531</a></li>
+                <li class="text-white/70 leading-snug">Pune, Maharashtra</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sub footer -->
+        <div class="w-full bg-[#4a4238]">
+          <div class="w-full px-4 sm:px-6 lg:px-10 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0 text-[13px] text-white/60">
+            <p>© 2026 Vrittii Architects · Made by Kivro Studio</p>
+            <div class="flex gap-6">
+              <a href="#!" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#!" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Scripts needed by navbar + mobile menu -->
+    <!-- ============================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Mobile / overlay menu toggle -->
+    <script>
+      const sideMenu = document.getElementById("sideMenu");
+      const menuOverlay = document.getElementById("menuOverlay");
+      const openMenuBtn = document.getElementById("openMenuBtn");
+      const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+      function openMenu() {
+        sideMenu.classList.remove("-translate-x-full");
+        menuOverlay.classList.remove("hidden");
+        document.documentElement.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        sideMenu.classList.add("-translate-x-full");
+        menuOverlay.classList.add("hidden");
+        document.documentElement.style.overflow = "";
+      }
+
+      openMenuBtn.addEventListener("click", openMenu);
+      closeMenuBtn.addEventListener("click", closeMenu);
+      menuOverlay.addEventListener("click", closeMenu);
+
+      // Menu links -> smooth scroll for in-page anchors, normal navigation otherwise
+      document.querySelectorAll(".menu-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          // Let real page links (about.html, index.html#contact, ...) navigate normally
+          if (!href || !href.startsWith("#") || href === "#" || href === "#!") {
+            closeMenu();
+            return;
+          }
+          e.preventDefault();
+          const targetEl = document.querySelector(href);
+          closeMenu();
+          setTimeout(() => {
+            if (targetEl) targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 400);
+        });
+      });
+    </script>
+
+    <!-- Fixed navbar: hide on scroll down, show on scroll up (+ bg once scrolled) -->
+    <script>
+      const mainNav = document.getElementById("mainNav");
+      mainNav.style.transition = "transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease";
+
+      let lastScrollY = window.scrollY;
+      const scrollThreshold = 8;
+
+      function onNavScroll() {
+        const y = window.scrollY;
+
+        if (y > 40) {
+          mainNav.style.backgroundColor = "rgba(255, 255, 255, 0.72)";
+          mainNav.style.backdropFilter = "blur(12px)";
+          mainNav.style.webkitBackdropFilter = "blur(12px)";
+          mainNav.style.boxShadow = "0 6px 20px rgba(0, 0, 0, 0.06)";
+          mainNav.style.color = "#141414";
+        } else {
+          mainNav.style.backgroundColor = "";
+          mainNav.style.backdropFilter = "";
+          mainNav.style.webkitBackdropFilter = "";
+          mainNav.style.boxShadow = "";
+          mainNav.style.color = "";
+        }
+
+        const delta = y - lastScrollY;
+        if (Math.abs(delta) > scrollThreshold) {
+          if (delta > 0 && y > 80) {
+            mainNav.style.transform = "translateY(-100%)";
+          } else {
+            mainNav.style.transform = "translateY(0)";
+          }
+          lastScrollY = y;
+        }
+      }
+
+      onNavScroll();
+      window.addEventListener("scroll", onNavScroll, { passive: true });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrittii Architects | Portfolio</title>
+    <meta name="description" content="Explore selected residential, commercial & turnkey interior projects by Vrittii Architects across Pune.">
+    <link rel="canonical" href="https://www.vrittiiarchitects.in/">
+    <meta name="theme-color" content="#5d5346">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vrittii Architects">
+    <meta property="og:title" content="Vrittii Architects | Portfolio">
+    <meta property="og:description" content="Explore selected residential, commercial & turnkey interior projects by Vrittii Architects across Pune.">
+    <meta property="og:url" content="https://www.vrittiiarchitects.in/">
+    <meta property="og:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vrittii Architects | Portfolio">
+    <meta name="twitter:description" content="Explore selected residential, commercial & turnkey interior projects by Vrittii Architects across Pune.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-secondary: "Manrope", sans-serif;
+        --font-primary: "Hedvig Letters Serif", serif;
+        --text-csm: 16px;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    </style>
+
+    <!-- Component-specific styles (shared with home page) -->
+    <style>
+      /* Section container max-width 1440px, 25px gutters (used site-wide) */
+      .container-x {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+      }
+      /* Row container for two-column row sections */
+      .container-row {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        flex: none;
+        gap: 100px;
+        place-content: center;
+        align-items: center;
+        overflow: clip;
+        height: min-content;
+      }
+
+      /* Hero parallax layers */
+      .parallax-img { will-change: transform; }
+
+      /* Project card hover zoom */
+      .project-image { overflow: hidden; }
+      .project-image img {
+        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
+      }
+      .project:hover .project-image img,
+      .project-image:hover img { transform: scale(1.06); }
+    </style>
+  </head>
+
+  <body>
+    <div class="root relative">
+
+      <!-- ============================= -->
+      <!-- Full Screen Mobile/Overlay Menu (shared) -->
+      <!-- ============================= -->
+      <div id="sideMenu" class="fixed top-0 left-0 h-[100svh] w-full sm:w-[420px] z-[100] backdrop-blur-[10px] bg-[rgba(16,16,20,0.6)] flex flex-col justify-between p-6 sm:p-10 -translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="menu-top flex justify-between items-center">
+          <span class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide text-white">Vrittii Architects</span>
+          <button id="closeMenuBtn" class="text-white p-2.5 border border-white/25 rounded-full shrink-0">
+            <i class="ri-close-line text-[18px] leading-none block"></i>
+          </button>
+        </div>
+
+        <ul class="menu-middle space-y-4 sm:space-y-6 text-white text-[20px] leading-[20px]">
+          <li><a href="portfolio.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Portfolio</a></li>
+          <li><a href="gallery.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Gallery</a></li>
+          <li><a href="services.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Services</a></li>
+          <li><a href="about.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">About Us</a></li>
+          <li><a href="contact.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Enquiries</a></li>
+        </ul>
+
+        <div class="pt-6 space-y-3 border-t border-t-white/15">
+          <ul class="text-[13px] sm:text-[14px] flex gap-4 font-medium tracking-[0.5px] uppercase text-white/70">
+            <li class="hover:text-white transition-colors cursor-pointer">Instagram</li>
+            <li class="hover:text-white transition-colors cursor-pointer">X</li>
+            <li class="hover:text-white transition-colors cursor-pointer">Linkedin</li>
+          </ul>
+          <p class="text-[14px] sm:text-[15px] font-normal leading-[20px] text-white/80">vrittiiarchitects@gmail.com</p>
+        </div>
+      </div>
+
+      <div id="menuOverlay" class="fixed inset-0 bg-black/40 z-[90] hidden"></div>
+
+      <!-- Navbar (fixed) dark text over the light hero, flips to white on scroll -->
+      <nav id="mainNav" class="fixed top-0 left-0 w-full z-[50] text-black transition-colors duration-300">
+        <div class="px-4 sm:px-6 lg:px-10 py-5 sm:py-6 flex items-center justify-between border-b border-black/10">
+          <a href="index.html#home" class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide">Vrittii Architects</a>
+
+          <ul class="hidden md:flex items-center gap-8 lg:gap-12 font-secondary text-[14px] leading-[18px] font-medium">
+            <li><a href="portfolio.html" class="menu-link hover:opacity-60 transition-opacity">Portfolio</a></li>
+            <li><a href="gallery.html" class="menu-link hover:opacity-60 transition-opacity">Gallery</a></li>
+            <li><a href="services.html" class="menu-link hover:opacity-60 transition-opacity">Services</a></li>
+            <li><a href="about.html" class="menu-link hover:opacity-60 transition-opacity">About Us</a></li>
+            <li><a href="contact.html" class="menu-link hover:opacity-60 transition-opacity">Enquiries</a></li>
+          </ul>
+
+          <!-- Mobile hamburger -->
+          <div id="openMenuBtn" class="md:hidden cursor-pointer flex flex-col gap-[6px] items-end shrink-0">
+            <span class="block w-7 h-[1.5px] bg-current"></span>
+            <span class="block w-7 h-[1.5px] bg-current"></span>
+            <span class="block w-7 h-[1.5px] bg-current"></span>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main-content">
+
+        <!-- ============================================================= -->
+        <!-- 1) PORTFOLIO HERO (parallax) -->
+        <!-- ============================================================= -->
+        <section id="portfolio-hero" class="relative min-h-[100svh] bg-[#f2ede4] overflow-hidden flex items-center justify-center">
+
+          <!-- Floating parallax images -->
+          <div class="parallax-img absolute z-[1] top-[10%] left-[13%] w-[14%] max-w-[190px] hidden md:block" data-depth="30">
+            <img class="w-full h-[279px] object-cover" src="https://framerusercontent.com/images/VC4qwfmfo0MFJmeX4tEZEVbnjn8.png?width=1200&height=800" alt="Interior project">
+          </div>
+          <div class="parallax-img absolute z-[1] top-[10%] right-[7%] w-[15%] max-w-[210px] hidden md:block" data-depth="-34">
+            <img class="w-full h-[279px] object-cover" src="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&height=1200" alt="Interior project">
+          </div>
+          <div class="parallax-img absolute z-[1] bottom-[10%] left-[7%] w-[15%] max-w-[200px] hidden md:block" data-depth="42">
+            <img class="w-full h-[279px] object-cover" src="https://framerusercontent.com/images/KnsCNi9u61AcCGrxlpzTM5amLsw.png?width=903&height=665" alt="Interior project">
+          </div>
+          <div class="parallax-img absolute z-[1] bottom-[10%] right-[13%] w-[15%] max-w-[210px] hidden md:block" data-depth="-26">
+            <img class="w-full h-[279px] object-cover" src="https://framerusercontent.com/images/O64BvWg7qKxhwTsoaMwOogOpIws.png?scale-down-to=1024&width=1200&height=1200" alt="Interior project">
+          </div>
+
+          <!-- Center content -->
+          <div class="relative z-[10] container-x text-center py-24">
+            <div class="max-w-[820px] mx-auto space-y-6 sm:space-y-8">
+              <h1 class="font-primary font-normal text-black whitespace-nowrap text-[36px] leading-[42px] sm:text-[56px] sm:leading-[62px] lg:text-[72px] lg:leading-[80px]">
+                Our Portfolio
+              </h1>
+              <p class="font-secondary text-[15px] sm:text-[16px] leading-[1.6] text-black/70 max-w-[440px] mx-auto">
+                A curated collection of projects showcasing our approach to thoughtful, refined interior design.
+              </p>
+              <a href="index.html#contact" class="menu-link inline-block font-secondary text-[14px] sm:text-[15px] tracking-[1px] uppercase text-black border-b border-black/50 pb-1 hover:opacity-60 transition-opacity">
+                Get in touch
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ============================================================= -->
+        <!-- 2) PROJECTS GRID -->
+        <!-- ============================================================= -->
+        <section id="projects" class="bg-white py-16 sm:py-24 md:py-[100px] lg:py-[125px]">
+          <div class="container-x space-y-10 sm:space-y-14">
+
+            <div class="max-w-[560px] space-y-2.5">
+              <h2 class="font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[1.15] text-black">Our Projects</h2>
+              <p class="font-secondary text-[14px] leading-[20px] text-black/60">A showcase of spaces we've designed and built crafted with precision and a passion for detail.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6.25 md:gap-6 lg:gap-5">
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/aDtGubgGAeXhajjsmNZuK79LE.png?scale-down-to=1024&width=1200&height=686" alt="Ulwe Skyline Residence">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Ulwe Skyline Residence</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Residential Interior Design</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/pqToNmi7VChoDbXOOdp4whAjGz4.png?scale-down-to=1024&width=1200&height=600" alt="Vashi Apartment">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Vashi Apartment</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Residential Interior Design</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/oairuUrhUpnUEwoYnA5D25TiEeI.png?width=1200&height=800" alt="Thane Penthouse">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Thane Penthouse</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Turnkey Interior Project</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/T6geNXuDqq1KVexrgVr7YFywx4.png?scale-down-to=1024&width=1200&height=802" alt="Corporate Office, BKC">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Corporate Office, BKC</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Commercial &amp; Office Interiors</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/s2qN6O29ysWc0QRn7Kdicvodk.png?scale-down-to=1024&width=800&height=1200" alt="Boutique Retail Store">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Boutique Retail Store</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Commercial &amp; Office Interiors</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/h87knZPq10A9fQf0b5LZXH7Rvw.png?scale-down-to=1024&width=1200&height=1200" alt="Modern Villa">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Modern Villa</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Civil Construction &amp; Structural Work</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/KISQbq1TEZFjuJMfZ0Gb7hTXoI.png?scale-down-to=1024&width=1200&height=1200" alt="Wellness Clinic">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Wellness Clinic</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Commercial &amp; Office Interiors</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/OxrwN4foa5ceufLjznXGuVD1sk.png?width=1199&height=903" alt="Duplex Renovation">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Duplex Renovation</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Renovation &amp; Remodeling</p>
+                </div>
+              </div>
+
+              <div class="project group space-y-3 sm:space-y-3.75">
+                <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[420px]">
+                  <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/B4wRK0oEiOLQhDFFqz0BnjXo1E.png?width=906&height=1200" alt="Luxury Apartment">
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-primary text-[20px] sm:text-[22px] leading-[26px] text-black">Luxury Apartment</h4>
+                  <p class="font-secondary text-[14px] leading-[20px] text-black/50">Residential Interior Design</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ============================= -->
+      <!-- Footer (shared) -->
+      <!-- ============================= -->
+      <!-- ============ CTA BAND ============ -->
+      <section class="relative h-[60svh] min-h-[380px] overflow-hidden">
+        <img class="absolute inset-0 w-full h-full object-cover" src="https://framerusercontent.com/images/aDtGubgGAeXhajjsmNZuK79LE.png?width=1200&height=686" alt="Vrittii Architects interior">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+          <div class="max-w-[640px] mx-auto space-y-5">
+            <h2 class="font-primary font-normal text-[30px] sm:text-[42px] lg:text-[48px] leading-[1.1]">Have a project in mind?</h2>
+            <p class="font-secondary text-[14px] leading-[20px] text-white/85 max-w-[480px] mx-auto">Tell us about your space and we'll put together a plan and a tentative estimate.</p>
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+              <a href="contact.html" class="bg-white text-[#2b2724] font-secondary font-semibold text-[14px] px-7 py-3.5 rounded-xl hover:bg-white/90 transition-colors">Get in Touch</a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="w-full bg-[#5d5346] text-white">
+        <div class="w-full px-4 sm:px-6 lg:px-10 pt-16 sm:pt-20 lg:pt-24 pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-10 lg:gap-8 pb-12 sm:pb-14">
+
+            <!-- Brand + subscribe -->
+            <div class="max-w-[380px]">
+              <a href="index.html#home" class="font-secondary text-[20px] leading-[26px] font-medium tracking-wide">Vrittii Architects</a>
+              <p class="font-secondary text-[14px] leading-[1.9] text-white/70 mt-6 max-w-[340px]">A Pune interior design, architecture & real estate studio. Thoughtful design, functional spaces, premium finishes and end-to-end support.</p>
+            </div>
+
+            <!-- INDEX -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Index</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="index.html#home" class="hover:text-white transition-colors">Home</a></li>
+                <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+              </ul>
+            </div>
+
+            <!-- DISCIPLINES -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Disciplines</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="services.html" class="hover:text-white transition-colors">Interior Design</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Civil Construction</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Renovation</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Turnkey Projects</a></li>
+              </ul>
+            </div>
+
+            <!-- NETWORK -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Network</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="https://www.instagram.com/vrittii_architects/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a></li>
+                <li><a href="https://wa.me/919730535531" target="_blank" rel="noopener" class="hover:text-white transition-colors">WhatsApp</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a></li>
+              </ul>
+            </div>
+
+            <!-- CONNECT -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Connect</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="contact.html" class="hover:text-white transition-colors">Enquiries</a></li>
+                <li><a href="mailto:vrittiiarchitects@gmail.com" class="hover:text-white transition-colors break-words">vrittiiarchitects@gmail.com</a></li>
+                <li><a href="tel:+919730535531" class="hover:text-white transition-colors">+91 97305 35531</a></li>
+                <li class="text-white/70 leading-snug">Pune, Maharashtra</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sub footer -->
+        <div class="w-full bg-[#4a4238]">
+          <div class="w-full px-4 sm:px-6 lg:px-10 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0 text-[13px] text-white/60">
+            <p>© 2026 Vrittii Architects · Made by Kivro Studio</p>
+            <div class="flex gap-6">
+              <a href="#!" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#!" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Scripts needed by navbar + mobile menu -->
+    <!-- ============================= -->
+    <script>
+      const sideMenu = document.getElementById("sideMenu");
+      const menuOverlay = document.getElementById("menuOverlay");
+      const openMenuBtn = document.getElementById("openMenuBtn");
+      const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+      function openMenu() {
+        sideMenu.classList.remove("-translate-x-full");
+        menuOverlay.classList.remove("hidden");
+        document.documentElement.style.overflow = "hidden";
+      }
+      function closeMenu() {
+        sideMenu.classList.add("-translate-x-full");
+        menuOverlay.classList.add("hidden");
+        document.documentElement.style.overflow = "";
+      }
+
+      openMenuBtn.addEventListener("click", openMenu);
+      closeMenuBtn.addEventListener("click", closeMenu);
+      menuOverlay.addEventListener("click", closeMenu);
+
+      document.querySelectorAll(".menu-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          if (!href || !href.startsWith("#") || href === "#" || href === "#!") {
+            closeMenu();
+            return;
+          }
+          e.preventDefault();
+          const targetEl = document.querySelector(href);
+          closeMenu();
+          setTimeout(() => {
+            if (targetEl) targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 400);
+        });
+      });
+    </script>
+
+    <!-- Fixed navbar: hide on scroll down, show on scroll up (+ bg once scrolled) -->
+    <script>
+      const mainNav = document.getElementById("mainNav");
+      mainNav.style.transition = "transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease";
+
+      let lastScrollY = window.scrollY;
+      const scrollThreshold = 8;
+
+      function onNavScroll() {
+        const y = window.scrollY;
+
+        if (y > 40) {
+          mainNav.style.backgroundColor = "rgba(255, 255, 255, 0.72)";
+          mainNav.style.backdropFilter = "blur(12px)";
+          mainNav.style.webkitBackdropFilter = "blur(12px)";
+          mainNav.style.boxShadow = "0 6px 20px rgba(0, 0, 0, 0.06)";
+          mainNav.style.color = "#141414";
+        } else {
+          mainNav.style.backgroundColor = "";
+          mainNav.style.backdropFilter = "";
+          mainNav.style.webkitBackdropFilter = "";
+          mainNav.style.boxShadow = "";
+          mainNav.style.color = ""; // light hero -> dark text (from text-black)
+        }
+
+        const delta = y - lastScrollY;
+        if (Math.abs(delta) > scrollThreshold) {
+          if (delta > 0 && y > 80) {
+            mainNav.style.transform = "translateY(-100%)";
+          } else {
+            mainNav.style.transform = "translateY(0)";
+          }
+          lastScrollY = y;
+        }
+      }
+
+      onNavScroll();
+      window.addEventListener("scroll", onNavScroll, { passive: true });
+    </script>
+
+    <!-- Hero parallax: images follow the mouse smoothly -->
+    <script>
+      (function () {
+        const hero = document.getElementById("portfolio-hero");
+        if (!hero) return;
+        const layers = hero.querySelectorAll(".parallax-img");
+        let targetX = 0, targetY = 0, curX = 0, curY = 0;
+
+        hero.addEventListener("mousemove", (e) => {
+          const r = hero.getBoundingClientRect();
+          targetX = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+          targetY = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+        });
+        hero.addEventListener("mouseleave", () => { targetX = 0; targetY = 0; });
+
+        function tick() {
+          curX += (targetX - curX) * 0.08;
+          curY += (targetY - curY) * 0.08;
+          layers.forEach((el) => {
+            const d = parseFloat(el.dataset.depth) || 0;
+            el.style.transform = "translate(" + (curX * d).toFixed(2) + "px, " + (curY * d).toFixed(2) + "px)";
+          });
+          requestAnimationFrame(tick);
+        }
+        tick();
+      })();
+    </script>
+
+  </body>
+</html>

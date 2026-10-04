@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrittii Architects | Interior Design & Real Estate</title>
+    <meta name="description" content="Vrittii Architects is a Pune interior design, architecture & real estate studio. Your dream space starts here — modern designs, timeless spaces.">
+    <link rel="canonical" href="https://www.vrittiiarchitects.in/">
+    <meta name="theme-color" content="#5d5346">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vrittii Architects">
+    <meta property="og:title" content="Vrittii Architects | Interior Design & Real Estate">
+    <meta property="og:description" content="Vrittii Architects is a Pune interior design, architecture & real estate studio. Your dream space starts here — modern designs, timeless spaces.">
+    <meta property="og:url" content="https://www.vrittiiarchitects.in/">
+    <meta property="og:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vrittii Architects | Interior Design & Real Estate">
+    <meta name="twitter:description" content="Vrittii Architects is a Pune interior design, architecture & real estate studio. Your dream space starts here — modern designs, timeless spaces.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/Y2Yp18uPF5BVQ1kFtuBU46jol74.png?width=1200&amp;height=1200">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-secondary: "Manrope", sans-serif;
+        --font-primary: "Hedvig Letters Serif", serif;
+        --text-csm: 16px;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    </style>
+
+    <!-- Component-specific styles -->
+    <style>
+      /* Section container max-width 1440px, 25px gutters (used site-wide) */
+      .container-x {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+      }
+      /* Row container for two-column row sections */
+      .container-row {
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding: 0 25px;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        flex: none;
+        gap: 100px;
+        place-content: center;
+        align-items: center;
+        overflow: clip;
+        height: min-content;
+      }
+
+      /* Project / journal card hover zoom */
+      .project-image {
+        overflow: hidden;
+      }
+      .project-image img {
+        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
+      }
+      .project:hover .project-image img,
+      .project-image:hover img {
+        transform: scale(1.06);
+      }
+
+      /* Generic scroll-reveal (used for anything not covered by SplitText) */
+      .reveal-up {
+        opacity: 0;
+        transform: translateY(36px);
+      }
+
+      /* Floating action buttons */
+      .fab-stack {
+        position: fixed;
+        right: 18px;
+        bottom: 22px;
+        z-index: 60;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+      .fab-btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 22px;
+        box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .fab-btn:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 12px 26px rgba(0,0,0,0.32);
+      }
+      .fab-whatsapp { background: #25D366; }
+      .fab-call { background: #5d5346; }
+
+      @keyframes fabPulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+        70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      .fab-whatsapp { animation: fabPulse 2.6s infinite; }
+    </style>
+  </head>
+
+  <body>
+    <div class="root relative">
+
+      <!-- Custom Hover Cursor -->
+      <div id="customCursor" class="fixed top-0 left-0 z-[999] pointer-events-none flex items-center justify-center rounded-full bg-black text-white text-[12px] font-normal uppercase tracking-wide opacity-0" style="width: 110px; height: 110px; transform: translate(-50%, -50%) scale(0);">
+        <span id="customCursorText">View</span>
+      </div>
+
+      <!-- Full Screen Mobile/Overlay Menu -->
+      <div id="sideMenu" class="fixed top-0 left-0 h-[100svh] w-full sm:w-[420px] z-[100] backdrop-blur-[10px] bg-[rgba(16,16,20,0.6)] flex flex-col justify-between p-6 sm:p-10 -translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="menu-top flex justify-between items-center">
+          <span class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide text-white">Vrittii Architects</span>
+          <button id="closeMenuBtn" class="text-white p-2.5 border border-white/25 rounded-full shrink-0">
+            <i class="ri-close-line text-[18px] leading-none block"></i>
+          </button>
+        </div>
+
+        <ul class="menu-middle space-y-4 sm:space-y-6 text-white text-[20px] leading-[20px]">
+          <li><a href="portfolio.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Portfolio</a></li>
+          <li><a href="gallery.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Gallery</a></li>
+          <li><a href="services.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Services</a></li>
+          <li><a href="about.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">About Us</a></li>
+          <li><a href="contact.html" class="menu-link cursor-pointer hover:opacity-50 transition-opacity block">Enquiries</a></li>
+        </ul>
+
+        <div class="pt-6 space-y-3 border-t border-t-white/15">
+          <ul class="text-[13px] sm:text-[14px] flex gap-4 font-medium tracking-[0.5px] uppercase text-white/70">
+            <li class="hover:text-white transition-colors cursor-pointer">Instagram</li>
+            <li class="hover:text-white transition-colors cursor-pointer">X</li>
+            <li class="hover:text-white transition-colors cursor-pointer">Linkedin</li>
+          </ul>
+          <p class="text-[14px] sm:text-[15px] font-normal leading-[20px] text-white/80">vrittiiarchitects@gmail.com</p>
+        </div>
+      </div>
+
+      <div id="menuOverlay" class="fixed inset-0 bg-black/40 z-[90] hidden"></div>
+
+     
+    <header class="relative h-[100svh] min-h-[640px] overflow-hidden" id="home">
+
+      <!-- Background image + overlay -->
+      <img class="absolute inset-0 w-full h-full object-cover bg-black" src="https://framerusercontent.com/images/y4pwQVVExvdnuPBh88wp6zMfM.png?width=5504&height=3072" alt="Vrittii Architects interior">
+      <div class="absolute inset-0 z-[1]" style="background-color: #191919; opacity: .6; overflow: clip; flex: none; -webkit-mask: linear-gradient(#000 0%, #000000b3 48.6884%, #000 100%); mask: linear-gradient(#000 0%, #000000b3 48.6884%, #000 100%);"></div>
+
+      <!-- Foreground content -->
+      <div class="relative z-[20] h-full flex flex-col text-white">
+
+        <!-- Navbar (fixed) -->
+        <nav id="mainNav" class="fixed top-0 left-0 w-full z-[50] text-white transition-colors duration-300">
+          <div class="px-4 sm:px-6 lg:px-10 py-5 sm:py-6 flex items-center justify-between border-b border-white/25">
+            <a href="#home" class="font-secondary text-[18px] leading-[24px] font-medium tracking-wide">Vrittii Architects</a>
+
+            <ul class="hidden md:flex items-center gap-8 lg:gap-12 font-secondary text-[14px] leading-[18px] font-medium">
+            <li><a href="portfolio.html" class="menu-link hover:opacity-60 transition-opacity">Portfolio</a></li>
+            <li><a href="gallery.html" class="menu-link hover:opacity-60 transition-opacity">Gallery</a></li>
+            <li><a href="services.html" class="menu-link hover:opacity-60 transition-opacity">Services</a></li>
+            <li><a href="about.html" class="menu-link hover:opacity-60 transition-opacity">About Us</a></li>
+            <li><a href="contact.html" class="menu-link hover:opacity-60 transition-opacity">Enquiries</a></li>
+          </ul>
+
+            <!-- Mobile hamburger -->
+            <div id="openMenuBtn" class="md:hidden cursor-pointer flex flex-col gap-[6px] items-end shrink-0">
+              <span class="hamburger-line block w-7 h-[1.5px] bg-white"></span>
+              <span class="hamburger-line block w-7 h-[1.5px] bg-white"></span>
+              <span class="hamburger-line block w-7 h-[1.5px] bg-white"></span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Middle: heading + description -->
+        <div class="flex-1 px-4 sm:px-6 lg:px-10 pt-[150px] sm:pt-56 lg:pt-[150px]">
+          <div class="relative h-full">
+
+            <h1 class="font-secondary font-light max-w-[400px] sm:max-w-[760px] text-[30px] leading-[34px] text-white sm:text-[40px] sm:leading-[44px] lg:text-[60px] lg:leading-[66px]">
+              Designing  Timeless Spaces with Precision  &amp; Passion.
+            </h1>
+
+            <!-- Description block (right side on desktop, stacked on mobile) -->
+            <div class="mt-8 max-w-[420px] space-y-5 md:mt-0 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:max-w-[380px]">
+              <p class="font-secondary text-[14px] leading-[18px] font-medium text-white/90">
+                Interior Design, Architecture &amp; Real Estate Solutions — thoughtfully crafted spaces built with precision, quality, and a passion for detail.
+              </p>
+              <a href="#our-projects" class="menu-link inline-block font-secondary text-[16px] leading-[21px] font-medium border-b border-white/60 pb-1 hover:opacity-70 transition-opacity">View projects</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom meta row -->
+        <div class="px-4 sm:px-6 lg:px-10 pb-[60px] sm:pb-10">
+          <div class="grid grid-cols-2 gap-x-6 gap-y-5 sm:flex sm:justify-between font-secondary text-[14px] leading-[16px] sm:text-[16px] sm:leading-[21px] font-medium">
+            <div class="min-w-0 sm:w-50 sm:shrink-0">
+              <p class="text-white/60 whitespace-nowrap">Studio</p>
+              <p class="mt-1">Vrittii Architects</p>
+            </div>
+            <div class="sm:w-50 sm:shrink-0">
+              <p class="text-white/60 whitespace-nowrap">Location</p>
+              <p class="mt-1">Pune, Maharashtra</p>
+            </div>
+            <div class="order-2 sm:order-none sm:w-50 sm:shrink-0">
+              <p class="text-white/60">Speciality</p>
+              <p class="mt-1">Residential &amp; Commercial</p>
+            </div>
+            <div class="order-1 sm:order-none sm:w-50">
+              <p class="text-white/60">Delivery</p>
+              <p class="mt-1">Concept to Creation</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+      <div class="main-content relative">
+        <div class="page-wrapper relative z-[10]">
+
+        
+          <!-- Statement Section -->
+          
+          <section class="relative w-full bg-white min-h-[100svh] overflow-hidden px-4 sm:px-6 lg:px-10 py-25 sm:py-16 lg:py-20 flex items-center justify-center">
+            <div class="max-w-7xl mx-auto w-full relative h-[420px] sm:h-[550px] md:h-[650px] lg:h-[750px]">
+
+              <div class="reveal-up absolute top-4 left-2 sm:top-10 sm:left-10 md:top-16 md:left-16 w-[90px] sm:w-[140px] md:w-[170px] lg:w-[200px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/O64BvWg7qKxhwTsoaMwOogOpIws.png?scale-down-to=512&width=1200&height=1200" alt="Interior hallway">
+              </div>
+
+              <div class="reveal-up absolute top-4 right-2 sm:top-10 sm:right-10 md:top-16 md:right-16 w-[80px] sm:w-[140px] md:w-[170px] lg:w-[200px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/2fWepbEq4iRUJ6C2yZ31VIckXc4.png?scale-down-to=1024&width=800&height=1200" alt="Interior living room">
+              </div>
+
+              <div class="reveal-up absolute bottom-4 left-2 sm:bottom-10 sm:left-10 md:bottom-16 md:left-16 w-[75px] sm:w-[125px] md:w-[155px] lg:w-[180px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/C1JRgFChrNMq7qX0hGThqIhtS4.png?scale-down-to=1024&width=904&height=1200" alt="Interior wall art">
+              </div>
+
+              <div class="reveal-up absolute bottom-4 right-2 sm:bottom-10 sm:right-10 md:bottom-16 md:right-16 w-[90px] sm:w-[140px] md:w-[170px] lg:w-[200px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/92QXDUHTXvpknuenDhJMWw8R40.png?scale-down-to=1024&width=1200&height=673" alt="Interior sitting area">
+              </div>
+
+              <div class="absolute inset-0 z-10 flex items-center justify-center px-2">
+                <h2 class="split max-w-[880px] font-normal leading-[30px] sm:leading-[44px] md:leading-[52px] lg:leading-[58px] text-[22px] text-center sm:text-[34px] md:text-[42px] lg:text-[48px] text-black tracking-tight font-primary">
+                  From concept to completion, we craft interiors that reflect who you are and how you live.
+                </h2>
+              </div>
+
+            </div>
+          </section>
+
+          
+          <!-- Our Projects Section -->
+          
+          <section id="our-projects">
+            <div class="bg-[#5d5346] py-25 sm:py-24 md:py-[100px] lg:py-[125px]">
+              <div class="container-x space-y-[50px] md:space-y-10 lg:space-y-12.5">
+
+                <div class="section-header text-center md:text-left text-white space-y-2.5">
+                  <h2 class="split font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[34px] sm:leading-[44px] md:leading-[50px] lg:leading-[58px]">Our Projects</h2>
+                  <p class="max-w-[320px] mx-auto md:mx-0 text-center md:text-left sm:max-w-[420px] text-[16px] sm:text-[17px] font-normal leading-[1.75]">A curated showcase of our finest interior spaces, crafted with bespoke design and flawless execution</p>
+
+                  <a href="portfolio.html" class="group relative inline-flex justify-center text-[13px] sm:text-[14px] font-normal leading-[20px]">
+                    <span class="after:absolute after:bottom-0 after:left-1/2 after:h-px after:w-full after:-translate-x-1/2 after:bg-white after:transition-all after:duration-500 after:ease-in-out group-hover:after:w-[20%]">
+                      VIEW ALL PROJECTS
+                    </span>
+                  </a>
+                </div>
+
+                <div class="section-content">
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6.25 lg:gap-5">
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[520px] sm:h-[380px] md:h-[450px] lg:h-[520px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/aDtGubgGAeXhajjsmNZuK79LE.png?scale-down-to=1024&width=1200&height=686" alt="Ulwe Skyline Residence">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary text-white leading-[22px] sm:leading-[24px] lg:leading-[26px]">Ulwe Skyline Residence</h4>
+                    </div>
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[520px] sm:h-[380px] md:h-[450px] lg:h-[520px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/pqToNmi7VChoDbXOOdp4whAjGz4.png?scale-down-to=1024&width=1200&height=600" alt="Vashi Apartment">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary text-white leading-[22px] sm:leading-[24px] lg:leading-[26px]">Vashi Apartment</h4>
+                    </div>
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[520px] sm:h-[380px] md:h-[450px] lg:h-[520px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/oairuUrhUpnUEwoYnA5D25TiEeI.png?width=1200&height=800" alt="Thane Penthouse">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary text-white leading-[22px] sm:leading-[24px] lg:leading-[26px]">Thane Penthouse</h4>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          
+          <!-- What We Do Section -->
+            <div id="services" class="py-25 bg-white sm:py-24 md:py-[100px] lg:py-[125px]">
+              <div class="container-x space-y-8 sm:space-y-10 lg:space-y-12.5">
+
+                <div class="section-header text-black space-y-2.5">
+                  <h2 class="split font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[34px] sm:leading-[44px] md:leading-[50px] lg:leading-[58px]">What We Do</h2>
+                  <p class="max-w-[300px] sm:max-w-[380px] text-[16px] sm:text-[17px] font-normal leading-[1.75]">Full-service interior design, from concept to styling and everything in between.</p>
+                </div>
+
+                <div class="section-content">
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6.25 lg:gap-5">
+
+                    <!-- Empty spacer column intentional, keeps the 3 cards offset on large screens -->
+                    <div class="project space-y-3 sm:space-y-3.75">
+                      <div class="project-image hidden md:block w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[520px]"></div>
+                    </div>
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[270px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/T6geNXuDqq1KVexrgVr7YFywx4.png?scale-down-to=1024&width=1200&height=802" alt="Residential interior design">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary leading-[22px] sm:leading-[24px] lg:leading-[26px]">Residential <br /> Interior Design</h4>
+                    </div>
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[472px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/s2qN6O29ysWc0QRn7Kdicvodk.png?scale-down-to=1024&width=800&height=1200" alt="Commercial and office interiors">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary leading-[22px] sm:leading-[24px] lg:leading-[26px]">Commercial & <br> Office Interiors</h4>
+                    </div>
+
+                    <div class="project group space-y-3 sm:space-y-3.75">
+                      <div class="project-image w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[270px]">
+                        <img class="w-full h-full object-cover" src="https://framerusercontent.com/images/h87knZPq10A9fQf0b5LZXH7Rvw.png?scale-down-to=1024&width=1200&height=1200" alt="Civil construction and structural work">
+                      </div>
+                      <h4 class="split text-[18px] sm:text-[20px] lg:text-[22px] font-normal font-primary leading-[22px] sm:leading-[24px] lg:leading-[26px]">Civil Construction & <br> Structural Work</h4>
+                    </div>
+
+                  </div>
+
+                  <a href="services.html" class="inline-flex items-center gap-2 mt-8 sm:mt-10 border border-black/70 px-6 sm:px-7 py-3 text-[12px] sm:text-[13px] font-medium tracking-[1.5px] uppercase text-black hover:bg-black hover:text-white transition-colors duration-300">
+                    View All Services <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          
+          
+          <!-- Stats / Counters Section -->
+
+          <section id="stats">
+            <div class="bg-[#5d5346] py-16 sm:py-20 lg:py-24">
+              <div class="container-x">
+                <div class="grid grid-cols-3 gap-4 sm:gap-8 text-center text-white divide-x divide-white/15">
+                  <div class="counter-item px-2">
+                    <p class="counter split font-primary text-[32px] sm:text-[48px] md:text-[56px] leading-none" data-count="50" data-suffix="+">0+</p>
+                    <p class="mt-2 sm:mt-3 text-[12px] sm:text-[14px] tracking-[1.5px] uppercase text-white/70">Projects</p>
+                  </div>
+                  <div class="counter-item px-2">
+                    <p class="counter split font-primary text-[32px] sm:text-[48px] md:text-[56px] leading-none" data-count="8" data-suffix="">0</p>
+                    <p class="mt-2 sm:mt-3 text-[12px] sm:text-[14px] tracking-[1.5px] uppercase text-white/70">Years Experience</p>
+                  </div>
+                  <div class="counter-item px-2">
+                    <p class="counter split font-primary text-[32px] sm:text-[48px] md:text-[56px] leading-none" data-count="100" data-suffix="+">0+</p>
+                    <p class="mt-2 sm:mt-3 text-[12px] sm:text-[14px] tracking-[1.5px] uppercase text-white/70">Happy Clients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+
+          
+          <!-- Testimonials Section -->
+          
+          <section id="testimonials">
+            <div class="py-16 sm:py-24 bg-[#ece7de] md:py-[100px] lg:py-[125px] relative">
+              <div class="container-x space-y-8 sm:space-y-10 lg:space-y-12.5">
+
+                <div class="section-header text-black space-y-2.5">
+                  <h2 class=" font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[34px] text-center sm:leading-[44px] md:leading-[50px] lg:leading-[58px]">Testimonials</h2>
+                </div>
+
+                <div class="section-content">
+                  <div class="max-w-[900px] mx-auto">
+                    <div id="testimonialArea" class="swiper testimonialSwiper" style="cursor: none;">
+                      <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                          <figure class="flex flex-col items-center text-center px-2">
+                            <div class="relative w-[112px] h-[112px]">
+                              <div class="w-full h-full rounded-full bg-[#2b2724] text-white flex items-center justify-center text-[28px] font-primary">DN</div>
+                              <span class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-[16px]"><i class="ri-double-quotes-r"></i></span>
+                            </div>
+                            <figcaption class="mt-6">
+                              <p class="text-[16px] font-semibold text-black">Dr. D Nagarjoge</p>
+                              <p class="text-[13px] text-black/45 mt-1">Relieve Laser &amp; Surgical Hospital</p>
+                            </figcaption>
+                            <blockquote class="mt-8 font-primary font-normal text-black/85 text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.6] max-w-[720px]">We had a wonderful experience with Vrittii Architects. Their design ideas, attention to detail, and professional approach truly transformed our clinic into something beautiful and functional. Highly recommended for anyone looking for quality interior design.</blockquote>
+                          </figure>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <figure class="flex flex-col items-center text-center px-2">
+                            <div class="relative w-[112px] h-[112px]">
+                              <div class="w-full h-full rounded-full bg-[#2b2724] text-white flex items-center justify-center text-[28px] font-primary">KM</div>
+                              <span class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-[16px]"><i class="ri-double-quotes-r"></i></span>
+                            </div>
+                            <figcaption class="mt-6">
+                              <p class="text-[16px] font-semibold text-black">Mr. Kailash More</p>
+                              <p class="text-[13px] text-black/45 mt-1">Jhamtani Ace Abode</p>
+                            </figcaption>
+                            <blockquote class="mt-8 font-primary font-normal text-black/85 text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.6] max-w-[720px]">The team at Vrittii Architects is extremely professional and creative. They understood our requirements perfectly and delivered the project with excellent finishing and on-time execution. We are very happy with the final outcome.</blockquote>
+                          </figure>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <figure class="flex flex-col items-center text-center px-2">
+                            <div class="relative w-[112px] h-[112px]">
+                              <div class="w-full h-full rounded-full bg-[#2b2724] text-white flex items-center justify-center text-[28px] font-primary">AM</div>
+                              <span class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-[16px]"><i class="ri-double-quotes-r"></i></span>
+                            </div>
+                            <figcaption class="mt-6">
+                              <p class="text-[16px] font-semibold text-black">Mr. A Madnorkar</p>
+                              <p class="text-[13px] text-black/45 mt-1">Godrej Hill View - 2</p>
+                            </figcaption>
+                            <blockquote class="mt-8 font-primary font-normal text-black/85 text-[16px] sm:text-[19px] lg:text-[22px] leading-[1.6] max-w-[720px]">Choosing Vrittii Architects was the best decision for our interior project. Their team is supportive, creative, and committed to delivering the best results. We would definitely recommend them to anyone planning their dream home.</blockquote>
+                          </figure>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="testimonial-frac mt-12 text-center font-secondary text-[14px] tracking-wide text-black/60"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="dragCursor" class="fixed top-0 left-0 z-[999] pointer-events-none flex items-center justify-center rounded-full bg-black text-white text-[12px] font-normal uppercase tracking-wide" style="width: 90px; height: 90px; opacity: 0; transform: translate(-50%, -50%) scale(0);">
+              Drag
+            </div>
+          </section>
+
+        
+      <!-- ============================= -->
+      <!-- Clients / Collaborations -->
+      <!-- ============================= -->
+      <section id="clients" class="bg-white py-16 sm:py-20 md:py-24 lg:py-28">
+        <div class="container-x">
+
+          <div class="section-header text-center max-w-[820px] mx-auto space-y-2.5">
+            <h2 class="split font-primary font-normal text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[34px] sm:leading-[44px] md:leading-[50px] lg:leading-[58px] text-black">Our Valued Clients</h2>
+            <p class="text-[16px] sm:text-[17px] font-normal leading-[1.75] max-w-[720px] mx-auto">Trusted by homeowners, developers and leading brands across the region, <br class="hidden sm:block"> we take pride in building lasting relationships through thoughtful design and reliable execution.</p>
+          </div>
+
+          <div class="mt-12 sm:mt-16 flex flex-wrap items-center justify-center gap-x-10 sm:gap-x-16 gap-y-10 sm:gap-y-14">
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-01.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-02.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-03.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-04.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-05.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-06.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-07.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-08.png" alt="Client logo"></div>
+            <div class="flex items-center justify-center h-14 sm:h-16"><img class="max-h-full w-auto object-contain" src="./assets/img/clients/client-09.png" alt="Client logo"></div>
+          </div>
+
+        </div>
+      </section>
+
+          <!-- Contact Section -->
+          
+         <section id="contact" class="relative h-[60svh] min-h-[380px] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" src="https://framerusercontent.com/images/aDtGubgGAeXhajjsmNZuK79LE.png?width=1200&height=686" alt="Vrittii Architects interior">
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="relative z-10 h-full flex items-center justify-center text-center text-white px-4">
+      <div class="max-w-[640px] mx-auto space-y-5">
+        <h2 class="font-primary font-normal text-[30px] sm:text-[42px] lg:text-[48px] leading-[1.1]">Have a project in mind?</h2>
+        <p class="font-secondary text-[14px] leading-[20px] text-white/85 max-w-[480px] mx-auto">Tell us about your space and we'll put together a plan and a tentative estimate.</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <a href="contact.html" class="bg-white text-[#2b2724] font-secondary font-semibold text-[14px] px-7 py-3.5 rounded-xl hover:bg-white/90 transition-colors">Get in Touch</a>
+          </div>
+      </div>
+    </div>
+</section>
+
+        </div>
+      </div>
+
+      <!-- ============================= -->
+      <!-- Footer Section -->
+      <!-- ============================= -->
+      <footer class="w-full bg-[#5d5346] text-white">
+        <div class="w-full px-4 sm:px-6 lg:px-10 pt-16 sm:pt-20 lg:pt-24 pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-10 lg:gap-8 pb-12 sm:pb-14">
+
+            <!-- Brand + subscribe -->
+            <div class="max-w-[380px]">
+              <a href="index.html#home" class="font-secondary text-[20px] leading-[26px] font-medium tracking-wide">Vrittii Architects</a>
+              <p class="font-secondary text-[14px] leading-[1.9] text-white/70 mt-6 max-w-[340px]">A Pune interior design, architecture & real estate studio. From concept to creation, we build spaces that inspire.</p>
+            </div>
+
+            <!-- INDEX -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Index</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="index.html#home" class="hover:text-white transition-colors">Home</a></li>
+                <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+              </ul>
+            </div>
+
+            <!-- DISCIPLINES -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Disciplines</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="services.html" class="hover:text-white transition-colors">Interior Design</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Civil Construction</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Renovation</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Turnkey Projects</a></li>
+              </ul>
+            </div>
+
+            <!-- NETWORK -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Network</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="https://www.instagram.com/vrittii_architects/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Instagram</a></li>
+                <li><a href="https://wa.me/919730535531" target="_blank" rel="noopener" class="hover:text-white transition-colors">WhatsApp</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">Facebook</a></li>
+              </ul>
+            </div>
+
+            <!-- CONNECT -->
+            <div>
+              <p class="text-[12px] tracking-[1.5px] uppercase text-white/45">Connect</p>
+              <ul class="mt-5 space-y-3.5 text-[15px] text-white/80">
+                <li><a href="contact.html" class="hover:text-white transition-colors">Enquiries</a></li>
+                <li><a href="mailto:vrittiiarchitects@gmail.com" class="hover:text-white transition-colors break-words">vrittiiarchitects@gmail.com</a></li>
+                <li><a href="tel:+919730535531" class="hover:text-white transition-colors">+91 97305 35531</a></li>
+                <li class="text-white/70 leading-snug">Pune, Maharashtra</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sub footer -->
+        <div class="w-full bg-[#4a4238]">
+          <div class="w-full px-4 sm:px-6 lg:px-10 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0 text-[13px] text-white/60">
+            <p>© 2026 Vrittii Architects · Made by Kivro Studio</p>
+            <div class="flex gap-6">
+              <a href="#!" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#!" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Third-party scripts -->
+    <!-- ============================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- ============================= -->
+    <!-- Testimonials swiper + drag cursor -->
+    <!-- ============================= -->
+    <script>
+      const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        speed: 700,
+        grabCursor: false,
+        loop: true,
+        spaceBetween: 40,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".testimonial-frac",
+          type: "fraction",
+        },
+      });
+
+      const dragCursor = document.getElementById("dragCursor");
+      const swiperArea = document.getElementById("testimonialArea");
+
+      gsap.set(dragCursor, { xPercent: -50, yPercent: -50 });
+
+      const dragXTo = gsap.quickTo(dragCursor, "x", { duration: 0.5, ease: "power3" });
+      const dragYTo = gsap.quickTo(dragCursor, "y", { duration: 0.5, ease: "power3" });
+
+      window.addEventListener("mousemove", (e) => {
+        dragXTo(e.clientX);
+        dragYTo(e.clientY);
+      });
+
+      swiperArea.addEventListener("mouseenter", () => {
+        gsap.to(dragCursor, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" });
+      });
+
+      swiperArea.addEventListener("mouseleave", () => {
+        gsap.to(dragCursor, { opacity: 0, scale: 0, duration: 0.4, ease: "power3.out" });
+      });
+
+      swiperArea.addEventListener("mousedown", () => {
+        gsap.to(dragCursor, { scale: 1.3, duration: 0.3, ease: "power2.out" });
+      });
+
+      swiperArea.addEventListener("mouseup", () => {
+        gsap.to(dragCursor, { scale: 1, duration: 0.3, ease: "power2.out" });
+      });
+    </script>
+
+    <!-- ============================= -->
+    <!-- SplitText word-reveal animation -->
+    <!-- ============================= -->
+    <script>
+      gsap.registerPlugin(SplitText, ScrollTrigger);
+
+      document.fonts.ready.then(() => {
+        // Hero heading is excluded it's revealed by the intro timeline
+        // instead, so it doesn't fire underneath the loader.
+        document.querySelectorAll(".split").forEach((el) => {
+          if (el.closest(".hero-content")) return;
+          if (el.classList.contains("counter")) return; // counters animate via number tween below
+
+          const split = SplitText.create(el, {
+            type: "words, lines",
+            mask: "lines",
+            linesClass: "line++",
+          });
+
+          gsap.from(split.words, {
+            yPercent: 200,
+            opacity: 0,
+            duration: 1.2,
+            ease: "expo.out",
+            stagger: 0.08,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 88%",
+            },
+          });
+        });
+      });
+    </script>
+
+    <!-- ============================= -->
+    <!-- Generic scroll-reveal (images, gallery items, cards) -->
+    <!-- ============================= -->
+    <script>
+      gsap.utils.toArray(".reveal-up").forEach((el, i) => {
+        gsap.to(el, {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          delay: (i % 4) * 0.08,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+          },
+        });
+      });
+
+      // Project / journal / gallery card reveal
+      gsap.utils.toArray("#our-projects .project").forEach((el, i) => {
+        gsap.fromTo(
+          el,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.9,
+            ease: "power3.out",
+            delay: (i % 3) * 0.1,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 92%",
+            },
+          }
+        );
+      });
+    </script>
+
+    <!-- ============================= -->
+    <!-- Stat counters -->
+    <!-- ============================= -->
+    <script>
+      gsap.utils.toArray(".counter").forEach((el) => {
+        const target = parseInt(el.getAttribute("data-count"), 10);
+        const suffix = el.getAttribute("data-suffix") || "";
+        const counterObj = { val: 0 };
+
+        gsap.to(counterObj, {
+          val: target,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            once: true,
+          },
+          onUpdate: () => {
+            el.textContent = Math.floor(counterObj.val) + suffix;
+          },
+        });
+      });
+    </script>
+
+    <!-- ============================= -->
+    <!-- Mobile / overlay menu toggle -->
+    <!-- ============================= -->
+    <script>
+      const sideMenu = document.getElementById("sideMenu");
+      const menuOverlay = document.getElementById("menuOverlay");
+      const openMenuBtn = document.getElementById("openMenuBtn");
+      const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+      function openMenu() {
+        sideMenu.classList.remove("-translate-x-full");
+        menuOverlay.classList.remove("hidden");
+        document.documentElement.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        sideMenu.classList.add("-translate-x-full");
+        menuOverlay.classList.add("hidden");
+        document.documentElement.style.overflow = "";
+      }
+
+      openMenuBtn.addEventListener("click", openMenu);
+      closeMenuBtn.addEventListener("click", closeMenu);
+      menuOverlay.addEventListener("click", closeMenu);
+
+      // Menu links -> smooth scroll to section (in-page anchors only)
+      document.querySelectorAll(".menu-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          // Let real page links (e.g. about.html, index.html#contact) navigate normally
+          if (!href || !href.startsWith("#") || href === "#" || href === "#!") {
+            closeMenu();
+            return;
+          }
+          e.preventDefault();
+          const targetEl = document.querySelector(href);
+          closeMenu();
+          setTimeout(() => {
+            if (targetEl) targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 400);
+        });
+      });
+    </script>
+
+    <!-- ============================= -->
+    <!-- Fixed navbar: hide on scroll down, show on scroll up (+ bg once scrolled) -->
+    <!-- ============================= -->
+    <script>
+      const mainNav = document.getElementById("mainNav");
+      mainNav.style.transition = "transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease";
+      const hamburgerLines = mainNav.querySelectorAll(".hamburger-line");
+
+      let lastScrollY = window.scrollY;
+      const scrollThreshold = 8; // ignore tiny jitter
+
+      function onNavScroll() {
+        const y = window.scrollY;
+
+        // Frosted white background once scrolled off the hero top
+        if (y > 40) {
+          mainNav.style.backgroundColor = "rgba(255, 255, 255, 0.72)";
+          mainNav.style.backdropFilter = "blur(12px)";
+          mainNav.style.webkitBackdropFilter = "blur(12px)";
+          mainNav.style.boxShadow = "0 6px 20px rgba(0, 0, 0, 0.06)";
+          mainNav.style.color = "#141414"; // dark text on white bar
+          hamburgerLines.forEach((line) => (line.style.backgroundColor = "#141414"));
+
+        } else {
+          mainNav.style.backgroundColor = "";
+          mainNav.style.backdropFilter = "";
+          mainNav.style.webkitBackdropFilter = "";
+          mainNav.style.boxShadow = "";
+
+          mainNav.style.color = ""; // back to white over the dark hero
+          hamburgerLines.forEach((line) => (line.style.backgroundColor = ""));
+        }
+
+        // Hide on scroll down, show on scroll up
+        const delta = y - lastScrollY;
+        if (Math.abs(delta) > scrollThreshold) {
+          if (delta > 0 && y > 80) {
+            mainNav.style.transform = "translateY(-100%)"; // scrolling down -> hide
+          } else {
+            mainNav.style.transform = "translateY(0)";     // scrolling up -> show
+          }
+          lastScrollY = y;
+        }
+      }
+
+      onNavScroll();
+      window.addEventListener("scroll", onNavScroll, { passive: true });
+    </script>
+
+    <!-- ============================= -->
+    <!-- Custom hover cursor -->
+    <!-- ============================= -->
+    <script>
+      const customCursor = document.getElementById("customCursor");
+      const cursorText = document.getElementById("customCursorText");
+
+      gsap.set(customCursor, { xPercent: -50, yPercent: -50 });
+
+      const cursorX = gsap.quickTo(customCursor, "x", { duration: 0.5, ease: "power3" });
+      const cursorY = gsap.quickTo(customCursor, "y", { duration: 0.5, ease: "power3" });
+
+      window.addEventListener("mousemove", (e) => {
+        cursorX(e.clientX);
+        cursorY(e.clientY);
+      });
+
+      function bindCursor(selector, text) {
+        document.querySelectorAll(selector).forEach((el) => {
+          el.addEventListener("mouseenter", () => {
+            cursorText.textContent = text;
+            gsap.to(customCursor, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" });
+          });
+          el.addEventListener("mouseleave", () => {
+            gsap.to(customCursor, { opacity: 0, scale: 0, duration: 0.4, ease: "power3.out" });
+          });
+        });
+      }
+
+      bindCursor("#our-projects .project-image", "View Project");
+    </script>
+
+  </body>
+</html>
